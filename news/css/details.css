@@ -1,0 +1,17 @@
+.middle-wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+}
+.info {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+.intime,.origin,.author {
+    display: inline-block;
+    margin: 0 5px;
+}

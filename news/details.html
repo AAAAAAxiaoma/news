@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/vue-router.js"></script>
+    <script src="./js/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <div class="topBar">
+                <ul>
+                    <li><a href="/">金华新闻网</a></li>
+                    <li><a target="_blank" href="/newest.html">最新榜</a></li>
+                    <li><a target="_blank" href="/hotsearch.html">热搜榜</a></li>
+                    <li><a target="_blank" href="/luck.html">试试手气</a></li>
+                </ul>
+            </div>
+            <span class="l">|</span>
+            <div class="tools">
+                <ul>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#">在线帮助</a></li>
+                    <li><a href="#">反馈建议</a></li>
+                </ul>
+            </div>
+            <div class="reg_login">
+                <ul>
+                    <li><a href="/u/index.html"><i class="fa fa-user"></i>Xiaoma007</a></li>
+                    <li><a href="/register.do"><i class="fa fa-user-plus"></i>注册</a></li>
+                    <li><a href="/login.do"><i class="fa fa-user"></i>登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="clearfix main">
+        <div class="middle-wrapper">
+            <h5 class="lead-title">
+
+            </h5>
+            <h1 class="title">
+                {{details.title}}
+            </h1>
+            <div class="info">
+                <p class="intime">
+                    {{details.updated}}
+                </p>
+                <p class="origin">来源：
+
+                </p>
+                <p class="author">作者：
+                    {{user.user}}
+                </p>
+            </div>
+            <div class="article">
+                {{details.text}}
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./js/vue/details.js"></script>
+
+</body>
+
+</html>
